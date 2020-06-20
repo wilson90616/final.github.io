@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>鞋餓份子-Air Max 97</title>
+		<link rel="stylesheet" href="../asset/css/singleproduct.css">
+		<script src="../asset/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="signform" id="signform" style="display:none;">
+			<div class="loginp">會員登入</div>
+			<div class="signclose">
+				<img src="../asset/img/123.png" width="35px" height="35px" onclick="signclose()">
+			</div>
+			<form name="login">
+				<div class="userdiv">
+					<input id="user" class="signinput" type="text" placeholder="帳號" name="user" pattern="(?=^[a-z0-9]{3,12}$)((?=.*[a-z])(?=.*[0-9]))^.*$" title="請輸入3~12位英數字組合" required>
+				</div>
+				<div class="pwddiv">
+					<input id="pwd" class="signinput" type="text" placeholder="密碼" name="pwd" pattern="(?=^[a-z0-9]{3,20}$)((?=.*[a-z])(?=.*[0-9]))^.*$" title="請輸入3~20位英數字組合" required>
+				</div>
+				<div class="postdiv">
+					<input class="loginbutton" type="submit" value="登入">
+				</div>
+				<br>
+				<div class="change signinp">
+					<p>還沒有賬號?趕快<a href="javascript:void(0)" onclick="signclose()start1()" class="signinp1">註冊</a>一個吧</p>
+				</div>
+			</form>
+		</div>
+		<div class="registerform" id="registerform" style="display:none;">
+			<div class="loginp">加入會員</div>
+			<div class="signclose">
+				<img src="../asset/img/123.png" width="35px" height="35px" onclick="signclose()">
+			</div>
+			<form name="register">
+				<div class="userdiv">
+					<input id="user" class="signinput" type="text" placeholder="輸入帳號" name="user" pattern="(?=^[a-z0-9]{3,12}$)((?=.*[a-z])(?=.*[0-9]))^.*$" title="請輸入3~12位英數字組合" required>
+				</div>
+				<div class="pwddiv">
+					<input id="pwd" class="signinput" type="text" placeholder="輸入密碼" name="pwd" pattern="(?=^[a-z0-9]{3,20}$)((?=.*[a-z])(?=.*[0-9]))^.*$" title="請輸入3~20位英數字組合" required>
+				</div>
+				<div class="phonediv">
+					<input id="phone" class="signinput" type="text" placeholder="輸入電話" name="phone" pattern="09[0-9]{2}([\-|\s]?)[0-9]{3}\1[0-9]{3}" title="請輸入10位數字，範例-09XX-XXX-XXX" required>
+				</div>
+				<div class="emaildiv">
+					<input id="email" class="signinput" type="email" placeholder="輸入電子郵件" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="請輸入正確的電子郵件，範例-example@gmail.com" required>
+				</div>
+				<div class="addressdiv">
+					<input id="address" class="signinput" type="text" placeholder="輸入地址" name="address" required>
+				</div>
+				<div class="namediv">
+					<input id="name" class="signinput" type="text" placeholder="姓名" name="name" pattern="([a-z]{3,20})" title="請輸入3~20位英文字" required>
+				</div>
+				<div class="sexdiv">
+					<input id="sex" class="sexinput" type="radio" name="sex" value="man"><font>男</font>&emsp;&emsp;&emsp;
+					<input id="sex" class="sexinput" type="radio" name="sex" value="woman"><font>女</font>
+				</div>
+				<div class="g-recaptcha" data-sitekey="6LdbWf4UAAAAAOqTTsM8XDVU-ihw3zvpZ6odPP80"></div>
+				<script src='https://www.google.com/recaptcha/api.js'></script>
+				<div class="postdiv1">
+					<input class="registerbutton" type="submit" value="註冊">
+					<input class="registerbutton" type="reset" value="重新輸入">
+				</div>
+			</form>
+		</div>
+		<div class="header">
+			<div class="top">
+				<a href="../index.html"><img src="../asset/img/logo.png" class="logo"></a>
+				<a href="shopcar.html"><img src="../asset/img/shopcar.png" class="shopcar"></a>
+				<a href="javascript:void(0)" onclick="start()"><img src="../asset/img/login.png" class="login"></a>
+				<ul class="user">
+					<li class="dropdown">
+						<a><img src="../asset/img/user.png" class="userimg"></a>
+						<div class="dropdown-content">
+							<a href="memberinformation.html">會員資料</a>
+							<a href="traderecord.html">交易紀錄</a>
+							<a href="membermodify.html">會員資料修改</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<marquee><p>新品Air Jordan 13上市囉!!!<a href="aj13.html" class="runword">點此購買</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;店長激推!!Air Max 97穿過都說讚，有多種配色任君挑選，每一種都好搭!<a href="airmax97.html" class="runword">點此購買</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;經典重現-Air Jordan 1，把握成為經典的機會<a href="aj1.html" class="runword">點此購買</a>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;穿搭神鞋NMD來了，本次進駐特殊配色，走在路上不會再怕撞鞋了，快來搶購!!!<a href="nmd.html" class="runword">點此購買</a></p></marquee>
+			<div class="nav">
+				<ul class="navul">
+					<li class="navli">
+						<a href="product.html" class="dropbtn"><font class="underline">所有商品</font></a>
+					</li>
+					<li class="navli">
+						<a href="hotproduct.html" class="dropbtn"><font class="underline">熱門商品</font></a>
+					</li>
+					<li class="dropdown navli">
+						<a class="dropbtn"><font class="underline">JORDAN</font></a>
+						<div class="dropdown-content">
+							<a href="aj1.html">Air Jordan 1</a>
+							<a href="aj11.html">Air Jordan 11</a>
+							<a href="aj13.html">Air Jordan 13</a>
+							<a href="ajog.html">Air Jordan OG</a>
+						</div>
+					</li>
+					<li class="dropdown navli">
+						<a class="dropbtn"><font class="underline">NIKE</font></a>
+						<div class="dropdown-content">
+							<a href="force1.html">Air Force 1</a>
+							<a href="airmax90.html">Air Max 90</a>
+							<a href="airmax97.html">Air Max 97</a>
+							<a href="vapormax.html">Air Vapormax 360</a>
+						</div>
+					</li>
+					<li class="dropdown navli">
+						<a class="dropbtn"><font class="underline">ADIDAS</font></a>
+						<div class="dropdown-content">
+							<a href="nmd.html">NMD</a>
+							<a href="yeezy.html">Yeezy Boost 350</a>
+							<a href="superstar.html">Superstar</a>
+							<a href="boost.html">Ultraboost</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section">
+			<div class="sectionleft">
+				<div class="productleft">
+					<img class="productimg" src="../asset/img/max97-1.jpg">
+					<img class="productimg" src="../asset/img/max97-2.jpg">
+					<img class="productimg" src="../asset/img/max97-3.jpg">
+					<img class="productimg" src="../asset/img/max97-4.jpg">
+					<img class="productimg" src="../asset/img/max97-5.jpg">
+					<img class="productimg" src="../asset/img/max97-6.jpg">
+				</div>
+			</div>
+			<div class="sectionright">
+				<div class="productright">
+					<div class="producttitle">鞋款<font class="productprice">$5,400</font></div>
+					<div class="productword">Air Max 97</div>
+					<div class="button">
+						<button id="num-min" class="num-min">-</button>
+						<input id="input-num" type="text" class="input-num"  value="1" style="width:60px;height:40px;" name = "amount" >
+						<button id="num-plus" class="num-plus">+</button>
+					</div>
+					<div class="productintro">Nike Air Max 97 男鞋保留了深受粉絲喜愛的經典外型和著名的設計細節：水波紋線條、反光條和全長 Max Air 緩震系統。</div>
+					<div class="sizeradio">
+						<input type="radio" id="23.5" value="23.5" name="size">
+						<label for="23.5">CM 23.5</label>
+						<input type="radio" id="24" value="24" name="size">
+						<label for="24">CM 24</label>
+						<input type="radio" id="24.5" value="24.5" name="size">
+						<label for="24.5">CM 24.5</label>
+						<input type="radio" id="25" value="25" name="size">
+						<label for="25">CM 25</label>
+						<input type="radio" id="25.5" value="25.5" name="size">
+						<label for="25.5">CM 25.5</label>
+						<input type="radio" id="26" value="26" name="size">
+						<label for="26">CM 26</label>
+						<input type="radio" id="26.5" value="26.5" name="size">
+						<label for="26.5">CM 26.5</label>
+						<input type="radio" id="27" value="27" name="size">
+						<label for="27">CM 27</label>
+						<input type="radio" id="27.5" value="27.5" name="size">
+						<label for="27.5">CM 27.5</label>
+					</div>
+					<div class="purchasebutton">
+						<button class="purchasebtn" onclick="location.href='order.html'">直接購買</button>
+					</div>
+					<div class="shopcarbutton">
+						<button class="shopcarbtn">加到購物車</button>
+					</div>
+					<div class="productcomment">
+						<div class="commentword">商品評分與評論</div>
+						<form>
+							<fieldset class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+								<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+								<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+								<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+								<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+							</fieldset>
+							<textarea name="comment" rows="10" cols="40	"></textarea>
+							<input type="submit" class="commentbtn" value="留言">
+						</form>
+					</div>
+					<div class="checkcomment">
+						<button class="accordion">查看評價</button>
+						<div class="panel">
+							<div class="commentarea">
+								<div class="username">wilson90616</div>
+								<div class="point">★</div>
+								<div class="usercomment">你們的關於我們做得好像有點醜 插瓶</div>
+							</div>
+							<div class="commentarea">
+								<div class="username">wilson90616</div>
+								<div class="point">★★</div>
+								<div class="usercomment">你們的關於我們做得好像有點醜 插瓶</div>
+							</div>
+							<div class="commentarea">
+								<div class="username">wilson90616</div>
+								<div class="point">★★★</div>
+								<div class="usercomment">你們的關於我們做得好像有點醜 插瓶</div>
+							</div>
+							<div class="commentarea">
+								<div class="username">wilson90616</div>
+								<div class="point">★★★★★</div>
+								<div class="usercomment">你們的關於我們做得好像有點醜 插瓶</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(function ()
+		{
+		$('.change a').click(function ()
+		{
+		$('.signform').animate({height: 'toggle', opacity: 'toggle'}, 'slow');
+		});
+		})
+		function start() {
+		document.getElementById('signform').style.display="";
+		}
+		function signclose() {
+		document.getElementById('signform').style.display="none"
+		document.getElementById('registerform').style.display="none"
+		}
+		</script>
+		<script>
+		$(function ()
+		{
+		$('.change a').click(function ()
+		{
+		$('.registerform').animate({height: 'toggle', opacity: 'toggle'}, 'slow');
+		});
+		})
+		function start1() {
+		document.getElementById('registerform').style.display="";
+		}
+		function signclose() {
+		document.getElementById('signform').style.display="none"
+		document.getElementById('registerform').style.display="none"
+		}
+		</script>
+		<div style="clear:both;">
+			<hr class="style-two">
+			<div class="footer">
+				<div class="container">
+					<img src="../asset/img/logo.png" class="footerimg">
+					<div class="footer-item3">
+						<p class="footerp">客服時間：周一至周五 A.M 8:00~ P.M 6:00</p>
+						<p class="footerp">電話：(03)311-6166</p>
+						<p class="footerp">地址：32023 桃園市中壢區大仁一街25號6樓之9 </p>
+						<p class="footerp">No.9, 6th Floor, No.25, Daren 1st Street, Chung Li District, Taoyuan City,Taiwan 32023, R.O.C</p>
+						<button class="bt aboutus"  onclick="location.href='aboutus.html'"><span>關於我們</span></button>
+					</div>
+					
+				</div>
+			</div>
+			<script>
+			var num_plus = document.getElementById("num-plus");
+			var num_min = document.getElementById("num-min");
+			var input_num = document.getElementById("input-num");
+			num_plus.onclick = function() {
+			input_num.value = parseInt(input_num.value) + 1;
+			}
+			num_min.onclick = function() {
+			if(input_num.value <= 1) {
+			input_num.value = 1;
+			} else {
+			input_num.value = parseInt(input_num.value) - 1;}}
+			</script>
+			<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+			for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			panel.style.display = "none";
+			} else {
+			panel.style.display = "block";
+			}
+			});
+			}
+			</script>
+		</body>
+	</html>
