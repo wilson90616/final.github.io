@@ -1,0 +1,402 @@
+@font-face{
+font-family: "aruming";
+src:url(..asset/font/aruming-1.ttf);
+}
+*{
+font-family: "aruming";
+}
+/*登入介面彈跳CSS*/
+.signform {
+position: fixed;
+background-color: 	#9D9D9D;
+top: 20%;
+left: 38%;
+width: 500px;
+height: 450px;
+border-radius: 1em;
+text-align: center;
+z-index: 999;
+}
+.registerform{
+position: fixed;
+background-color: 	#9D9D9D;
+top: 10%;
+left: 38%;
+width: 500px;
+height: 780px;
+border-radius: 1em;
+text-align: center;
+z-index: 999;
+}
+.signclose {
+cursor: pointer;
+float: right;
+overflow: hidden;
+text-align: center;
+position: relative;
+height: 35px;
+width: 35px;
+margin-top: -75px;
+margin-right: 10px;
+}
+.signinput {
+text-align: center;
+border-radius: 0.2em;
+width: 280px;
+height: 45px;
+border: none;
+background-color:#f2f2f2;
+font-size: 28px;
+}
+.signinput::-webkit-input-placeholder {
+font-size: 26px;
+}
+.userdiv {
+position: relative;
+margin-top: 80px;
+}
+.pwddiv {
+position: relative;
+margin-top: 20px;
+}
+.checkpwddiv{
+position: relative;
+margin-top: 20px;
+}
+.addressdiv{
+position: relative;
+margin-top: 20px;
+}
+.emaildiv{
+position: relative;
+margin-top: 20px;
+}
+.phonediv {
+position: relative;
+margin-top: 20px;
+}
+.namediv{
+position: relative;
+margin-top: 20px;
+}
+.sexdiv{
+position: relative;
+margin-top: 20px;
+}
+.g-recaptcha{
+margin-left: 100px;
+margin-top: 20px;
+}
+.postdiv {
+position: relative;
+margin-top: 20px;
+}
+.postdiv1{
+position: relative;
+margin-top: 20px;
+}
+.loginbutton{
+cursor: pointer;
+color: white;
+font-size: 26px;
+border: none;
+border-radius: 0.4em;
+width: 280px;
+height: 45px;
+background-color:#BEBEBE;
+}
+.registerbutton{
+cursor: pointer;
+color: white;
+font-size: 26px;
+border: none;
+border-radius: 0.4em;
+width: 150px;
+height: 45px;
+background-color:#BEBEBE;
+}
+.login{
+float:right;
+width:55px;
+margin-right: 20px;
+margin-top: 35px;
+}
+.loginp{
+font-size: 56px;
+font-weight: bold;
+margin-top: 20px;
+color:white;
+}
+.signinp{
+color:white;
+}
+.signinp1{
+text-decoration: none;
+color: red;
+}
+/*登入介面彈跳CSS結束*/
+input[type=text101]{
+width: 130px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 12px;
+background-color: white;
+background-position: 5px 5px;
+background-repeat: no-repeat;
+padding: 12px 20px 12px 20px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+.container{
+display: flex;justify-content: center;
+}
+.footer-item3{
+font-size: 14px;  display: inline-block;
+width: auto;
+height: auto;
+line-height:2;
+vertical-align: middle;
+}
+.aboutus{
+margin-left: 800px;
+margin-top: -100px;
+}
+.footer{
+margin-left: 400px;
+}
+hr.style-two {
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(192,192,192,0), rgba(192,192,192,0.75), rgba(192,192,192,0));
+justify-content: center;
+}
+.footerimg{
+width:120px;
+height:120px;
+}
+.footerp{
+font-size: 14px;
+line-height: 1;
+font-weight: bold;
+}
+.header{
+width:100%;
+height:250px;
+}
+.top{
+width:100%;
+height:100px;
+}
+.nav{
+border:5px solid transparent;
+height:50px;
+}
+.section{
+width:100%;
+height:1000px;
+}
+.userimg{
+width:55px;
+}
+.navul {
+list-style: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #F0F0F0;
+}
+.navli {
+float: left;
+}
+li a, .dropbtn {
+font-size: 24px;
+font-weight: bold;
+display: inline-block;
+color: black;
+text-align: center;
+margin-left:30px;
+padding: 14px 24px;
+text-decoration: none;
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+display: block;
+text-align: left;
+transition: color 0.5s ;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;margin-left: 30px;color:#ADADAD;}
+.dropdown:hover .dropdown-content {
+display: block;
+margin-left: 30px;
+}
+.run{
+width:100%;
+}
+.runword{
+color:red;
+}
+.logo{
+width:100px;
+}
+.user{
+float:right;
+margin-right: 20px;
+margin-top: 20px;
+}
+.shopcar{
+width:90px;
+float:right;
+margin-top: 12px;
+margin-right:20px;
+}
+.underline{  position: relative; }
+.underline:after{ content: ""; width: 0; height: 3px; background: black; position: absolute; top: 100%; left: 50%; transition: all .4s; }
+.underline:hover:after{ left: 0%; width: 100%;}
+.coverflow{
+width:100%;
+height: 700px;
+text-align:center;
+background-color:#000;
+}
+.bt
+{
+background-color:transparent;
+border: 3px #4F4F4F solid; /* 去掉邊框 */
+color: 	#6C6C6C;
+font-size: 30px; /* 改字體大小 */
+padding: 10px; /* 按鈕內邊距離 */
+width: 180px;
+height:60px;  /* 按鈕寬度 */
+border-radius: 5px; /* 圓角5px */
+}
+.bt span
+{
+transition: 0.5s; /* 過渡0.5秒 */
+text-shadow: 0 1px 1px rgba(0,0,0,.4),0 1px 2px rgba(0,0,0,.2);
+}
+.bt:hover
+{
+cursor:pointer;
+background-color: rgba(255,255,255,0.2);
+}
+.bt:hover span
+{
+padding-right: 25px;
+/* 當鼠標在按鈕上時span內邊右距離25px */
+}
+.bt span:after{
+content: "»"; /* span後面追加內容為» */
+opacity: 0; /* 透明度為0 */
+transition: 0.5s; /* 加個0.5秒的過渡 */
+}
+.bt:hover span:after
+{
+opacity: 1; /* 透明度為1，就是顯示 */
+}
+.trade{
+width:80%;
+height:auto;
+margin-right:auto;
+margin-left:auto;
+margin-top:50px;
+}
+.trade-title{
+height:100px;
+line-height:100px;
+font-size:64px;
+font-weight:800;
+text-align:center;
+text-shadow: 0.1em 0.1em 0.2em gray;
+}
+.trade-title2{
+font-size: 36px;
+}
+.trade-main{
+background-color:#fff;
+padding-bottom:50px;
+line-height: 200%;
+border-bottom:1px solid black;
+}
+.trade-1 a{
+text-decoration:underline;
+color:black;
+}
+.trade-1 ul{
+display:flex;
+font-size:18px;
+margin-bottom:0;
+margin-right:885px;
+}
+.trade-1 li{
+list-style-type: none;
+font-size: 36px;
+font-style:italic;
+}
+.trade-1{
+display:flex;
+border-bottom:1px solid black;
+text-decoration: underline;
+}
+.trade-1 form{
+padding:10px 10px 5px 10px;
+}
+.trade-2{
+margin-top:5px;
+}
+.trade-2 table{
+width:100%;
+text-align:center;
+font-size:18px;
+}
+.trade-2 table th{
+text-decoration:underline;
+background-color: #BEBEBE;
+}
+.trade-3{
+margin-top:50px;
+}
+.trade-3 .trade-back {
+font-size:20px;
+color:black;
+text-decoration:none;
+background-color:#ccc;
+padding:10px;
+border-radius:2px;
+}
+.backimg{
+padding-top: 20px;
+}
+.trade-3 .go-shopping{
+font-size:20px;
+color:black;
+text-decoration:none;
+background-color:#ccc;
+padding:10px;
+border-radius:2px;
+margin-left:890px;
+}
+.trade-back img{
+width:40px;
+height:40px;
+margin-right:5px;
+margin-bottom:-13px;
+}
+.go-shopping img{
+width:40px;
+height:40px;
+margin-right:5px;
+margin-bottom:-15px;
+}
